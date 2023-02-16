@@ -1,4 +1,2 @@
 #!/bin/bash
-cfile=$CFILE
-cpp -o c $cfile
-tail c
+gcc -E $CFILE -o c
