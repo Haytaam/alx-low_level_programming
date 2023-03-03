@@ -8,16 +8,16 @@
 char *leet(char *str)
 {
 	int i, j;
-	char *leet = "A4E3O0T7L1";
+	char s1[] = "A4E3O0T7L1";
+	char s2[] = "4433007711";
 
 for (i = 0; str[i] != '\0'; i++)
 {
-for (j = 0; j < 10; j += 2)
+for (j = 0; j < 10; j++)
 {
-if (str[i] == leet[j] || str[i] == leet[j + 1])
+if (str[i] == s1[j])
 {
-str[i] = leet[j + 1];
-break;
+str[i] = s2[j];
 }
 }
 }
